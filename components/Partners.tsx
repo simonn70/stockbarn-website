@@ -4,9 +4,9 @@ import {
   Package,
   Truck,
   CheckCircle,
-  Timer,
+
   PhoneCall,
-  MapPin,
+
   Gift,
   Smile,
 } from 'lucide-react';

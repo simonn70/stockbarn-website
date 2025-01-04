@@ -3,11 +3,9 @@ import {
   Twitter,
   Instagram,
   Linkedin,
-  Mail,
-  Phone,
-  MapPin,
+ 
 } from "lucide-react";
-import Link from "next/link";
+
 
 const socialLinks = [
   { icon: Facebook, href: "#", label: "Facebook" },

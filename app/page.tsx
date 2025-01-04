@@ -1,14 +1,12 @@
 'use client'
 
-import { ProductCard } from '@/components/Card'
+// import { ProductCard } from '@/components/Card'
 
-import { MiniCart } from '@/components/mini-cart'
-import { useCartStore } from '@/contexts/CardStore'
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+// import { MiniCart } from '@/components/mini-cart'
+
 import { Header } from '@/components/HeaderNew'
 import { HeroSection } from '@/components/HeroNew'
-import { LoanProducts, MarketProducts } from '@/components/Services'
+import {  MarketProducts } from '@/components/Services'
 import { AdvantagesSection } from '@/components/Partners'
 import { Footer } from '@/components/Footer'
 
@@ -21,36 +19,36 @@ import { Footer } from '@/components/Footer'
   white: '#FFFFFF',
 }
 
-interface Product {
-  _id: string;
-  name: string;
-  price: number;
-  images: string[];
-  unit: string;
-  category: string;
-  description: string;
-  nutrition: string;
-}
+// interface Product {
+//   _id: string;
+//   name: string;
+//   price: number;
+//   images: string[];
+//   unit: string;
+//   category: string;
+//   description: string;
+//   nutrition: string;
+// }
 
 export default function Home() {
-  const { addToCart } = useCartStore()
-  const [products, setProducts] = useState<Product[]>([])
+  // const { addToCart } = useCartStore()
+  // const [products, setProducts] = useState<Product[]>([])
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/product/`)
-        setProducts(response.data)
-      } catch (error) {
-        console.error('Error fetching products:', error)
-      }
-    }
+  // useEffect(() => {
+  //   const fetchProducts = async () => {
+  //     try {
+  //       const response = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/product/`)
+  //       setProducts(response.data)
+  //     } catch (error) {
+  //       console.error('Error fetching products:', error)
+  //     }
+  //   }
 
-    fetchProducts()
-  }, [])
+  //   fetchProducts()
+  // }, [])
 
   // Extract unique categories
-  const categories = Array.from(new Set(products.map(p => p.category)))
+  // const categories = Array.from(new Set(products.map(p => p.category)))
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: colors.background }}>
