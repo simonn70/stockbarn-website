@@ -5,15 +5,14 @@ import {  Sparkles } from "lucide-react";
 import { ImageSlideshow } from "./HeroSlideShow";
 
 import AutoLoan from "../public/market.jpg";
-import AutoLoan1 from "../public/market1.jpg";
-import AutoLoan2 from "../public/market2.webp";
+
 // import PropertyLoan from "../assets/images/property loan.jpg";
 // import LifestyleLoan from "../assets/images/lifestyle loan.jpg";
 // import EnterpriseLoan from "../assets/images/enterprise loan.png";
 // import Image4 from "../assets/images/education-image-5.png";
 import Link from "next/link";
 
-const images = [ AutoLoan, AutoLoan1,AutoLoan2];
+const images = [ AutoLoan];
 
 export function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -27,14 +26,14 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative py-20 sm:py-40 px-5 sm:px-10 overflow-hidden bg-gradient-to-br from-customBlue to-blue-800">
+    <section className="relative py-20 sm:py-40 px-5 sm:px-10 overflow-hidden ">
       {/* Decorative elements */}
       <div
-        className="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]"
+        className="absolute hidden inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]"
         aria-hidden="true"
       />
       <div
-        className="absolute -top-36 -right-24 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"
+        className="absolute hidden sm:block -top-36 -right-24 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"
         aria-hidden="true"
       />
       <div
@@ -48,11 +47,11 @@ export function HeroSection() {
           
           <div className="space-y-8 max-w-2xl text-center lg:text-left">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl text-blue-300">
-              Your One Stop Shop for all your Market needs
+              We work hard to make your restaurant run smoothly.
             </h1>
             <p className="text-xl text-blue-300 leading-relaxed">
-             Lets get you started with all your grossary needs , shop like you are in the market , Get it delivered at your door steps.
-            </p>
+            We supply all your fresh vegetables, oils, creams, proteins, tubers and grains .
+</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               {/* <Button
                 asChild

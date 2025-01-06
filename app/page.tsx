@@ -6,9 +6,10 @@
 
 import { Header } from '@/components/HeaderNew'
 import { HeroSection } from '@/components/HeroNew'
-import {  MarketProducts } from '@/components/Services'
+// import {  MarketProducts } from '@/components/Services'
 import { AdvantagesSection } from '@/components/Partners'
 import { Footer } from '@/components/Footer'
+import OurPartners from '@/components/OurPartners'
 
  const colors = {
   primary: '#4CAF50',
@@ -54,7 +55,8 @@ export default function Home() {
     <div className="min-h-screen" style={{ backgroundColor: colors.background }}>
       <Header />
       <HeroSection />
-      <MarketProducts/>
+      {/* <MarketProducts/> */}
+      <OurPartners/>
       <AdvantagesSection/>
         <Footer/>
       {/* <main className="container mx-auto py-8 px-4">
