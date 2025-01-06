@@ -1,14 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import logo from "../public/logo.webp"
 import loggo from "../public/loggo.jpg"
-
+import loggoo from "../public/aaa.jpg"
 const partners = [
-  { id: 1, name: "Partner 1", logo: logo },
+  { id: 1, name: "Partner 1", logo: loggoo },
   { id: 2, name: "Partner 2", logo: loggo },
-  { id: 3, name: "Partner 3", logo: logo },
+  { id: 3, name: "Partner 3", logo: loggoo },
   { id: 4, name: "Partner 4", logo: loggo },
- 
 ];
 
 const OurPartners = () => {
