@@ -5,6 +5,7 @@ import {  Sparkles } from "lucide-react";
 import { ImageSlideshow } from "./HeroSlideShow";
 
 import AutoLoan from "../public/market.jpg";
+import AutoLoan1 from "../public/market1.jpg";
 
 // import PropertyLoan from "../assets/images/property loan.jpg";
 // import LifestyleLoan from "../assets/images/lifestyle loan.jpg";
@@ -12,7 +13,7 @@ import AutoLoan from "../public/market.jpg";
 // import Image4 from "../assets/images/education-image-5.png";
 import Link from "next/link";
 
-const images = [ AutoLoan];
+const images = [ AutoLoan,AutoLoan1];
 
 export function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
