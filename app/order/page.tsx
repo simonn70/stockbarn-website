@@ -83,7 +83,7 @@ export default function ProductForm() {
       <Header />
       <div className="min-h-screen bg-gradient-to-br mt-[20px] from-blue-50 to-blue-100 flex items-center justify-center p-6">
         <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-3xl">
-          <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">User and Product Details</h2>
+          <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">Place an Order</h2>
 
           {error && (
             <div className="mb-4 text-sm text-red-600 bg-red-50 p-2 rounded">
@@ -112,7 +112,7 @@ export default function ProductForm() {
 
               <div>
                 <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-1">
-                  Location
+                  Restaurant Name
                 </label>
                 <input
                   type="text"
@@ -121,7 +121,7 @@ export default function ProductForm() {
                   value={userDetails.location}
                   onChange={handleUserChange}
                   className="w-full p-3 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none text-gray-900"
-                  placeholder="Enter your location"
+                  placeholder="Enter your Restaurant name"
                   required
                 />
               </div>
@@ -261,7 +261,7 @@ export default function ProductForm() {
           <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center p-4 z-10">
             <div className="bg-white rounded-lg shadow-xl p-6 max-w-sm w-full text-center">
               <h3 className="text-lg font-bold text-gray-800 mb-4">Success!</h3>
-              <p className="text-gray-600">Your products have been submitted successfully.</p>
+              <p className="text-gray-600">Your products have been submitted successfully.An invoice will be sent to you shortly .Thank You !</p>
               <button
                 onClick={closeSuccessModal}
                 className="mt-6 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300"
